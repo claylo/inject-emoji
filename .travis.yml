@@ -17,7 +17,7 @@ install:
   - pip install coverage coveralls[yaml] pytest pytest-runner pytest-travis-fold pytest-instafail
 
 script:
-  coverage run --source=injectemoji setup.py test
+  coverage run --source=inject_emoji setup.py test
 
 after_success:
   - coveralls --verbose
